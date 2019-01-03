@@ -29,7 +29,7 @@ int encoder_main(int argc, char *argv[] )
   extern Word16 *new_speech;     /* Pointer to new speech data            */
 
   Word16 prm[PRM_SIZE];          /* Analysis parameters.                  */
-  Word16 serial[SERIAL_SIZE];    /* Output bitstream buffer               */
+  unsigned char serial[SERIAL_SIZE];    /* Output bitstream buffer               */
 
   Word16 frame;                  /* frame counter */
 
@@ -85,18 +85,24 @@ int encoder_main(int argc, char *argv[] )
   /* Loop for each "L_FRAME" speech data. */
 
   frame =0;
-  while( fread(new_speech, sizeof(Word16), L_FRAME, f_speech) == L_FRAME)
-  {
-    printf("Frame =%d\r", frame++);
-
-    Pre_Process(new_speech, L_FRAME);
-
-    Coder_ld8a(prm);
-
-    prm2bits_ld8k( prm, serial);
-
-    fwrite(serial, sizeof(Word16), SERIAL_SIZE, f_serial);
-  }
+//  while( fread(new_speech, sizeof(Word16), L_FRAME, f_speech) == L_FRAME)
+//  {
+//    printf("Frame =%d\r", frame++);
+//    Pre_Process(new_speech, L_FRAME);
+//    Coder_ld8a(prm);
+//    prm2bits_ld8k( prm, serial);
+//    fwrite(serial, sizeof(Word16), SERIAL_SIZE, f_serial);
+//  }
+    while( fread(new_speech, sizeof(Word16), L_FRAME, f_speech) == L_FRAME)
+    {
+        printf("Frame =%d\r", frame++);
+        Pre_Process(new_speech, L_FRAME);
+        Coder_ld8a(prm);
+        prm2bits_ld8k( prm, serial);
+        fwrite(serial, 1, SERIAL_SIZE, f_serial);
+    }
+    
+    fclose(f_serial);
   return (0);
 }
 

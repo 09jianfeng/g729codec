@@ -42,7 +42,7 @@ int decoder_main(int argc, char *argv[] )
 {
   Word16  synth_buf[L_FRAME+M], *synth; /* Synthesis                   */
   Word16  parm[PRM_SIZE+1];             /* Synthesis parameters        */
-  Word16  serial[SERIAL_SIZE];          /* Serial stream               */
+  unsigned char serial[SERIAL_SIZE];          /* Serial stream               */
   Word16  Az_dec[MP1*2];                /* Decoded Az for post-filter  */
   Word16  T2[2];                        /* Pitch lag for 2 subframes   */
 
@@ -108,33 +108,41 @@ int decoder_main(int argc, char *argv[] )
  *            Loop for each "L_FRAME" speech data                  *
  *-----------------------------------------------------------------*/
 
-  frame = 0;
-  while( fread(serial, sizeof(Word16), SERIAL_SIZE, f_serial) == SERIAL_SIZE)
-  {
-    printf("Frame =%d\r", frame++);
-
-    bits2prm_ld8k( &serial[2], &parm[1]);
-
-    /* the hardware detects frame erasures by checking if all bits
-       are set to zero
-     */
-    parm[0] = 0;           /* No frame erasure */
-    for (i=2; i < SERIAL_SIZE; i++)
-      if (serial[i] == 0 ) parm[0] = 1; /* frame erased     */
-
-    /* check pitch parity and put 1 in parm[4] if parity error */
-
-    parm[4] = Check_Parity_Pitch(parm[3], parm[4]);
-
-    Decod_ld8a(parm, synth, Az_dec, T2);
-
-    Post_Filter(synth, Az_dec, T2);        /* Post-filter */
-
-    Post_Process(synth, L_FRAME);
-
-    fwrite(synth, sizeof(short), L_FRAME, f_syn);
-
-  }
+//  frame = 0;
+//  while( fread(serial, sizeof(Word16), SERIAL_SIZE, f_serial) == SERIAL_SIZE)
+//  {
+//    printf("Frame =%d\r", frame++);
+//    bits2prm_ld8k( &serial[2], &parm[1]);
+//    /* the hardware detects frame erasures by checking if all bits
+//       are set to zero
+//     */
+//    parm[0] = 0;           /* No frame erasure */
+//    for (i=2; i < SERIAL_SIZE; i++)
+//      if (serial[i] == 0 ) parm[0] = 1; /* frame erased     */
+//    /* check pitch parity and put 1 in parm[4] if parity error */
+//    parm[4] = Check_Parity_Pitch(parm[3], parm[4]);
+//    Decod_ld8a(parm, synth, Az_dec, T2);
+//    Post_Filter(synth, Az_dec, T2);        /* Post-filter */
+//    Post_Process(synth, L_FRAME);
+//    fwrite(synth, sizeof(short), L_FRAME, f_syn);
+//  }
+    
+    frame = 0;
+    unsigned long readSize = fread(serial, 1, SERIAL_SIZE, f_serial);
+    while( readSize == SERIAL_SIZE)
+    {
+        printf("Frame =%d\r", frame++);
+        bits2prm_ld8k(serial, &parm[1]);
+        parm[0] = 0;
+        parm[4] = 0 ;
+        Decod_ld8a(parm, synth, Az_dec, T2);
+        Post_Filter(synth, Az_dec, T2);
+        Post_Process(synth, L_FRAME);
+        fwrite(synth, sizeof(short), L_FRAME, f_syn);
+        readSize = fread(serial, 1, SERIAL_SIZE, f_serial);
+    }
+    
+    fclose(f_serial);
   return(0);
 }
 
