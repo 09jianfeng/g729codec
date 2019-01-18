@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		783F75AA21DCBA3900F573BA /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F75A921DCBA3900F573BA /* main.c */; };
+		78260CC721F1B99E00659ED5 /* G729Codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78260CC521F1B99E00659ED5 /* G729Codec.cpp */; };
+		78260CCF21F1C1ED00659ED5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78260CCE21F1C1ED00659ED5 /* main.cpp */; };
+		783F75AA21DCBA3900F573BA /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 783F75A921DCBA3900F573BA /* main.cc */; };
 		783F768621DDE8E100F573BA /* Ch_f1_8k.pcm in Copy Files */ = {isa = PBXBuildFile; fileRef = 783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */; };
 		783F777821DE0E7E00F573BA /* gainpred.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775121DE0E7E00F573BA /* gainpred.c */; };
 		783F777921DE0E7E00F573BA /* taming.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775321DE0E7E00F573BA /* taming.c */; };
@@ -42,6 +44,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		78260CCA21F1C1ED00659ED5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		783F75A421DCBA3900F573BA /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -56,8 +67,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		78260CC521F1B99E00659ED5 /* G729Codec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = G729Codec.cpp; sourceTree = "<group>"; };
+		78260CC621F1B99E00659ED5 /* G729Codec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G729Codec.h; sourceTree = "<group>"; };
+		78260CCC21F1C1ED00659ED5 /* g729cpluss */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g729cpluss; sourceTree = BUILT_PRODUCTS_DIR; };
+		78260CCE21F1C1ED00659ED5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		783F75A621DCBA3900F573BA /* g729codec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g729codec; sourceTree = BUILT_PRODUCTS_DIR; };
-		783F75A921DCBA3900F573BA /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		783F75A921DCBA3900F573BA /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
 		783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ch_f1_8k.pcm; sourceTree = "<group>"; };
 		783F775121DE0E7E00F573BA /* gainpred.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gainpred.c; sourceTree = "<group>"; };
 		783F775221DE0E7E00F573BA /* basic_op.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_op.h; sourceTree = "<group>"; };
@@ -101,6 +116,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		78260CC921F1C1ED00659ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		783F75A321DCBA3900F573BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,10 +133,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78260CCD21F1C1ED00659ED5 /* g729cpluss */ = {
+			isa = PBXGroup;
+			children = (
+				78260CCE21F1C1ED00659ED5 /* main.cpp */,
+			);
+			path = g729cpluss;
+			sourceTree = "<group>";
+		};
 		783F759D21DCBA3900F573BA = {
 			isa = PBXGroup;
 			children = (
 				783F75A821DCBA3900F573BA /* g729codec */,
+				78260CCD21F1C1ED00659ED5 /* g729cpluss */,
 				783F75A721DCBA3900F573BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				783F75A621DCBA3900F573BA /* g729codec */,
+				78260CCC21F1C1ED00659ED5 /* g729cpluss */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,7 +164,7 @@
 			children = (
 				783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */,
 				783F775021DE0E7E00F573BA /* g729a */,
-				783F75A921DCBA3900F573BA /* main.c */,
+				783F75A921DCBA3900F573BA /* main.cc */,
 			);
 			path = g729codec;
 			sourceTree = "<group>";
@@ -179,6 +211,8 @@
 				783F777721DE0E7E00F573BA /* lpcfunc.c */,
 				783F775D21DE0E7E00F573BA /* coder.c */,
 				783F776E21DE0E7E00F573BA /* decoder.c */,
+				78260CC621F1B99E00659ED5 /* G729Codec.h */,
+				78260CC521F1B99E00659ED5 /* G729Codec.cpp */,
 			);
 			path = g729a;
 			sourceTree = "<group>";
@@ -186,6 +220,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		78260CCB21F1C1ED00659ED5 /* g729cpluss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78260CD021F1C1ED00659ED5 /* Build configuration list for PBXNativeTarget "g729cpluss" */;
+			buildPhases = (
+				78260CC821F1C1ED00659ED5 /* Sources */,
+				78260CC921F1C1ED00659ED5 /* Frameworks */,
+				78260CCA21F1C1ED00659ED5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = g729cpluss;
+			productName = g729cpluss;
+			productReference = 78260CCC21F1C1ED00659ED5 /* g729cpluss */;
+			productType = "com.apple.product-type.tool";
+		};
 		783F75A521DCBA3900F573BA /* g729codec */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 783F75AD21DCBA3900F573BA /* Build configuration list for PBXNativeTarget "g729codec" */;
@@ -212,6 +263,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = JFChen;
 				TargetAttributes = {
+					78260CCB21F1C1ED00659ED5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					783F75A521DCBA3900F573BA = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -230,11 +284,20 @@
 			projectRoot = "";
 			targets = (
 				783F75A521DCBA3900F573BA /* g729codec */,
+				78260CCB21F1C1ED00659ED5 /* g729cpluss */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		78260CC821F1C1ED00659ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260CCF21F1C1ED00659ED5 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		783F75A221DCBA3900F573BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +307,7 @@
 				783F779021DE0E7E00F573BA /* decoder.c in Sources */,
 				783F777B21DE0E7E00F573BA /* util.c in Sources */,
 				783F777921DE0E7E00F573BA /* taming.c in Sources */,
+				78260CC721F1B99E00659ED5 /* G729Codec.cpp in Sources */,
 				783F777E21DE0E7E00F573BA /* tab_ld8a.c in Sources */,
 				783F777A21DE0E7E00F573BA /* cod_ld8a.c in Sources */,
 				783F779421DE0E7E00F573BA /* pre_proc.c in Sources */,
@@ -260,7 +324,7 @@
 				783F778321DE0E7E00F573BA /* qua_gain.c in Sources */,
 				783F778B21DE0E7E00F573BA /* post_pro.c in Sources */,
 				783F778E21DE0E7E00F573BA /* de_acelp.c in Sources */,
-				783F75AA21DCBA3900F573BA /* main.c in Sources */,
+				783F75AA21DCBA3900F573BA /* main.cc in Sources */,
 				783F777821DE0E7E00F573BA /* gainpred.c in Sources */,
 				783F779721DE0E7E00F573BA /* lpcfunc.c in Sources */,
 				783F778821DE0E7E00F573BA /* basic_op.c in Sources */,
@@ -276,6 +340,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		78260CD121F1C1ED00659ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Q24N9KP5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		78260CD221F1C1ED00659ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Q24N9KP5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		783F75AB21DCBA3900F573BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -408,6 +490,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		78260CD021F1C1ED00659ED5 /* Build configuration list for PBXNativeTarget "g729cpluss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260CD121F1C1ED00659ED5 /* Debug */,
+				78260CD221F1C1ED00659ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		783F75A121DCBA3900F573BA /* Build configuration list for PBXProject "g729codec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
