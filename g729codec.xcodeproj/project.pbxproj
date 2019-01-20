@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7805D40C21F406AF00194C98 /* g729_main_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D40B21F406AF00194C98 /* g729_main_test.cc */; };
+		7805D44221F40ED800194C98 /* dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43821F40ED800194C98 /* dsp.c */; };
+		7805D44421F40ED800194C98 /* pesqmain.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43A21F40ED800194C98 /* pesqmain.c */; };
+		7805D44521F40ED800194C98 /* pesqio.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43C21F40ED800194C98 /* pesqio.c */; };
+		7805D44621F40ED800194C98 /* pesqmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43D21F40ED800194C98 /* pesqmod.c */; };
+		7805D44721F40ED800194C98 /* pesqdsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D44121F40ED800194C98 /* pesqdsp.c */; };
+		7805D44A21F4121A00194C98 /* pesq_calculate.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D44821F4121A00194C98 /* pesq_calculate.cc */; };
+		7805D44E21F416BE00194C98 /* waveoperator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D44C21F416BE00194C98 /* waveoperator.cc */; };
+		7805D45021F4193200194C98 /* Ch_f1_8k.wav in Copy Files */ = {isa = PBXBuildFile; fileRef = 7805D44F21F4192400194C98 /* Ch_f1_8k.wav */; };
 		78260CC721F1B99E00659ED5 /* G729Codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78260CC521F1B99E00659ED5 /* G729Codec.cpp */; };
 		783F75AA21DCBA3900F573BA /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 783F75A921DCBA3900F573BA /* main.cc */; };
 		783F768621DDE8E100F573BA /* Ch_f1_8k.pcm in Copy Files */ = {isa = PBXBuildFile; fileRef = 783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */; };
@@ -50,6 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				7805D45021F4193200194C98 /* Ch_f1_8k.wav in Copy Files */,
 				783F768621DDE8E100F573BA /* Ch_f1_8k.pcm in Copy Files */,
 			);
 			name = "Copy Files";
@@ -60,6 +69,20 @@
 /* Begin PBXFileReference section */
 		7805D40A21F406AF00194C98 /* g729_main_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = g729_main_test.h; sourceTree = "<group>"; };
 		7805D40B21F406AF00194C98 /* g729_main_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = g729_main_test.cc; sourceTree = "<group>"; };
+		7805D43121F40DE600194C98 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7805D43721F40ED800194C98 /* pesq.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pesq.h; sourceTree = "<group>"; };
+		7805D43821F40ED800194C98 /* dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsp.c; sourceTree = "<group>"; };
+		7805D43A21F40ED800194C98 /* pesqmain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pesqmain.c; sourceTree = "<group>"; };
+		7805D43B21F40ED800194C98 /* pesqpar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pesqpar.h; sourceTree = "<group>"; };
+		7805D43C21F40ED800194C98 /* pesqio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pesqio.c; sourceTree = "<group>"; };
+		7805D43D21F40ED800194C98 /* pesqmod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pesqmod.c; sourceTree = "<group>"; };
+		7805D43E21F40ED800194C98 /* dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsp.h; sourceTree = "<group>"; };
+		7805D44121F40ED800194C98 /* pesqdsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pesqdsp.c; sourceTree = "<group>"; };
+		7805D44821F4121A00194C98 /* pesq_calculate.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pesq_calculate.cc; sourceTree = "<group>"; };
+		7805D44921F4121A00194C98 /* pesq_calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pesq_calculate.h; sourceTree = "<group>"; };
+		7805D44C21F416BE00194C98 /* waveoperator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = waveoperator.cc; sourceTree = "<group>"; };
+		7805D44D21F416BE00194C98 /* waveoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waveoperator.h; sourceTree = "<group>"; };
+		7805D44F21F4192400194C98 /* Ch_f1_8k.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ch_f1_8k.wav; sourceTree = "<group>"; };
 		78260CC521F1B99E00659ED5 /* G729Codec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = G729Codec.cpp; sourceTree = "<group>"; };
 		78260CC621F1B99E00659ED5 /* G729Codec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G729Codec.h; sourceTree = "<group>"; };
 		783F75A621DCBA3900F573BA /* g729codec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g729codec; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,10 +140,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7805D43021F40DE600194C98 /* g729cplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				7805D43121F40DE600194C98 /* main.cpp */,
+			);
+			path = g729cplusplus;
+			sourceTree = "<group>";
+		};
+		7805D43621F40ED800194C98 /* PESQ */ = {
+			isa = PBXGroup;
+			children = (
+				7805D44821F4121A00194C98 /* pesq_calculate.cc */,
+				7805D44921F4121A00194C98 /* pesq_calculate.h */,
+				7805D43721F40ED800194C98 /* pesq.h */,
+				7805D43E21F40ED800194C98 /* dsp.h */,
+				7805D43821F40ED800194C98 /* dsp.c */,
+				7805D43B21F40ED800194C98 /* pesqpar.h */,
+				7805D43A21F40ED800194C98 /* pesqmain.c */,
+				7805D43D21F40ED800194C98 /* pesqmod.c */,
+				7805D44121F40ED800194C98 /* pesqdsp.c */,
+				7805D43C21F40ED800194C98 /* pesqio.c */,
+			);
+			path = PESQ;
+			sourceTree = "<group>";
+		};
+		7805D44B21F416BE00194C98 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				7805D44D21F416BE00194C98 /* waveoperator.h */,
+				7805D44C21F416BE00194C98 /* waveoperator.cc */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		783F759D21DCBA3900F573BA = {
 			isa = PBXGroup;
 			children = (
 				783F75A821DCBA3900F573BA /* g729codec */,
+				7805D43021F40DE600194C98 /* g729cplusplus */,
 				783F75A721DCBA3900F573BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,7 +194,10 @@
 		783F75A821DCBA3900F573BA /* g729codec */ = {
 			isa = PBXGroup;
 			children = (
+				7805D44F21F4192400194C98 /* Ch_f1_8k.wav */,
 				783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */,
+				7805D44B21F416BE00194C98 /* utils */,
+				7805D43621F40ED800194C98 /* PESQ */,
 				783F775021DE0E7E00F573BA /* g729a */,
 				783F75A921DCBA3900F573BA /* main.cc */,
 			);
@@ -258,9 +319,12 @@
 				783F777E21DE0E7E00F573BA /* tab_ld8a.c in Sources */,
 				783F777A21DE0E7E00F573BA /* cod_ld8a.c in Sources */,
 				783F779421DE0E7E00F573BA /* pre_proc.c in Sources */,
+				7805D44421F40ED800194C98 /* pesqmain.c in Sources */,
+				7805D44E21F416BE00194C98 /* waveoperator.cc in Sources */,
 				783F778921DE0E7E00F573BA /* acelp_ca.c in Sources */,
 				783F777C21DE0E7E00F573BA /* p_parity.c in Sources */,
 				783F778121DE0E7E00F573BA /* coder.c in Sources */,
+				7805D44621F40ED800194C98 /* pesqmod.c in Sources */,
 				783F778F21DE0E7E00F573BA /* cor_func.c in Sources */,
 				783F778621DE0E7E00F573BA /* oper_32b.c in Sources */,
 				783F778221DE0E7E00F573BA /* filter.c in Sources */,
@@ -271,8 +335,11 @@
 				783F778321DE0E7E00F573BA /* qua_gain.c in Sources */,
 				783F778B21DE0E7E00F573BA /* post_pro.c in Sources */,
 				783F778E21DE0E7E00F573BA /* de_acelp.c in Sources */,
+				7805D44521F40ED800194C98 /* pesqio.c in Sources */,
 				783F75AA21DCBA3900F573BA /* main.cc in Sources */,
+				7805D44221F40ED800194C98 /* dsp.c in Sources */,
 				783F777821DE0E7E00F573BA /* gainpred.c in Sources */,
+				7805D44A21F4121A00194C98 /* pesq_calculate.cc in Sources */,
 				783F779721DE0E7E00F573BA /* lpcfunc.c in Sources */,
 				7805D40C21F406AF00194C98 /* g729_main_test.cc in Sources */,
 				783F778821DE0E7E00F573BA /* basic_op.c in Sources */,
@@ -282,6 +349,7 @@
 				783F779321DE0E7E00F573BA /* pred_lt3.c in Sources */,
 				783F778521DE0E7E00F573BA /* lspdec.c in Sources */,
 				783F777F21DE0E7E00F573BA /* postfilt.c in Sources */,
+				7805D44721F40ED800194C98 /* pesqdsp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

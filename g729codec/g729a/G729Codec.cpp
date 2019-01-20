@@ -58,7 +58,7 @@ int G729Codec::Encode(Word16 *inData,int dataLen, std::string& outData){
     unsigned char serial[SERIAL_SIZE];    /* Output bitstream buffer               */
     
     Set_zero(prm, PRM_SIZE);
-    Pre_Process(inData, L_FRAME);
+    Pre_Process(new_speech, L_FRAME);
     Coder_ld8a(prm);
     prm2bits_ld8k( prm, serial);
     outData.append((char *)serial,SERIAL_SIZE);

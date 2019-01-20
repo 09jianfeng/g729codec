@@ -16,6 +16,8 @@ extern "C" {
 #include "typedef.h"
 #include "basic_op.h"
 #include "ld8a.h"
+    
+extern Word16 *new_speech;     /* Pointer to new speech data            */
 }
 
 

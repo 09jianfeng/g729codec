@@ -8,17 +8,21 @@
 
 #include <stdio.h>
 #include "G729Codec.h"
+#include "waveOperator.h"
+#include "pesq_calculate.h"
 
 extern "C"{
-	extern Word16 *new_speech;     /* Pointer to new speech data            */
+    extern Word16 *new_speech;     /* Pointer to new speech data            */
 }
 
 int g729_main() {
     G729Codec *codec = new G729Codec();
     int encodeFrame = 0;
     int decodeFrame = 0;
+    std::string inString;
+    std::string outString;
+    
     {
-//        const char *argv2[] = { "g729codec", "..\\..\\testfile\\ITU\\Ch_f1_8k.pcm", "g729codecout" };
         const char *argv2[] = { "g729codec", "Ch_f1_8k.pcm", "g729codecout" };
         FILE *f_speech;               /* File of speech data                   */
         FILE *f_serial;               /* File of serial bits for transmission  */
@@ -35,6 +39,8 @@ int g729_main() {
         
         while( fread(new_speech, sizeof(Word16), L_FRAME, f_speech) == L_FRAME)
         {
+            inString.append((char *)new_speech, L_FRAME * 2);
+            
             encodeFrame++;
             printf("Frame:%d \n",encodeFrame);
             std::string outData;
@@ -72,6 +78,7 @@ int g729_main() {
             printf("dFrame:%d \n",decodeFrame);
             std::string outData;
             codec->Decode(serial, SERIAL_SIZE, outData);
+            outString.append(outData);
             fwrite(outData.c_str(), sizeof(short), L_FRAME, f_syn);
             readSize = fread(serial, 1, SERIAL_SIZE, f_serial);
         }
@@ -79,6 +86,15 @@ int g729_main() {
         fclose(f_syn);
     }
     
-    printf("Hello, World!\n");
+    std::string sourceFile = "729sourcePCM.wav";
+    CWaveOperator wavOperaSource;
+    wavOperaSource.WriteTotalWavData(sourceFile.c_str(),inString,8000,1);
+    std::string targetFile = "729targetPCM.wav";
+    CWaveOperator wavOperaTarget;
+    wavOperaTarget.WriteTotalWavData(targetFile.c_str(), outString, 8000, 1);
+    
+    float mos = PesqCalculate(sourceFile.c_str(),targetFile.c_str(),8000);
+    
+    printf("Hello, g729 mos:%f!\n",mos);
     return 0;
 }
