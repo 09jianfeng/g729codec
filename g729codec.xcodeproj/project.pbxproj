@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7805D40C21F406AF00194C98 /* g729_main_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D40B21F406AF00194C98 /* g729_main_test.cc */; };
 		78260CC721F1B99E00659ED5 /* G729Codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78260CC521F1B99E00659ED5 /* G729Codec.cpp */; };
-		78260CCF21F1C1ED00659ED5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78260CCE21F1C1ED00659ED5 /* main.cpp */; };
 		783F75AA21DCBA3900F573BA /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 783F75A921DCBA3900F573BA /* main.cc */; };
 		783F768621DDE8E100F573BA /* Ch_f1_8k.pcm in Copy Files */ = {isa = PBXBuildFile; fileRef = 783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */; };
 		783F777821DE0E7E00F573BA /* gainpred.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775121DE0E7E00F573BA /* gainpred.c */; };
@@ -44,15 +44,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		78260CCA21F1C1ED00659ED5 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		783F75A421DCBA3900F573BA /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -67,10 +58,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7805D40A21F406AF00194C98 /* g729_main_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = g729_main_test.h; sourceTree = "<group>"; };
+		7805D40B21F406AF00194C98 /* g729_main_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = g729_main_test.cc; sourceTree = "<group>"; };
 		78260CC521F1B99E00659ED5 /* G729Codec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = G729Codec.cpp; sourceTree = "<group>"; };
 		78260CC621F1B99E00659ED5 /* G729Codec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G729Codec.h; sourceTree = "<group>"; };
-		78260CCC21F1C1ED00659ED5 /* g729cpluss */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g729cpluss; sourceTree = BUILT_PRODUCTS_DIR; };
-		78260CCE21F1C1ED00659ED5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		783F75A621DCBA3900F573BA /* g729codec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g729codec; sourceTree = BUILT_PRODUCTS_DIR; };
 		783F75A921DCBA3900F573BA /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
 		783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ch_f1_8k.pcm; sourceTree = "<group>"; };
@@ -116,13 +107,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		78260CC921F1C1ED00659ED5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		783F75A321DCBA3900F573BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,19 +117,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		78260CCD21F1C1ED00659ED5 /* g729cpluss */ = {
-			isa = PBXGroup;
-			children = (
-				78260CCE21F1C1ED00659ED5 /* main.cpp */,
-			);
-			path = g729cpluss;
-			sourceTree = "<group>";
-		};
 		783F759D21DCBA3900F573BA = {
 			isa = PBXGroup;
 			children = (
 				783F75A821DCBA3900F573BA /* g729codec */,
-				78260CCD21F1C1ED00659ED5 /* g729cpluss */,
 				783F75A721DCBA3900F573BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				783F75A621DCBA3900F573BA /* g729codec */,
-				78260CCC21F1C1ED00659ED5 /* g729cpluss */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +187,8 @@
 				783F776E21DE0E7E00F573BA /* decoder.c */,
 				78260CC621F1B99E00659ED5 /* G729Codec.h */,
 				78260CC521F1B99E00659ED5 /* G729Codec.cpp */,
+				7805D40B21F406AF00194C98 /* g729_main_test.cc */,
+				7805D40A21F406AF00194C98 /* g729_main_test.h */,
 			);
 			path = g729a;
 			sourceTree = "<group>";
@@ -220,23 +196,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		78260CCB21F1C1ED00659ED5 /* g729cpluss */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78260CD021F1C1ED00659ED5 /* Build configuration list for PBXNativeTarget "g729cpluss" */;
-			buildPhases = (
-				78260CC821F1C1ED00659ED5 /* Sources */,
-				78260CC921F1C1ED00659ED5 /* Frameworks */,
-				78260CCA21F1C1ED00659ED5 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = g729cpluss;
-			productName = g729cpluss;
-			productReference = 78260CCC21F1C1ED00659ED5 /* g729cpluss */;
-			productType = "com.apple.product-type.tool";
-		};
 		783F75A521DCBA3900F573BA /* g729codec */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 783F75AD21DCBA3900F573BA /* Build configuration list for PBXNativeTarget "g729codec" */;
@@ -263,9 +222,6 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = JFChen;
 				TargetAttributes = {
-					78260CCB21F1C1ED00659ED5 = {
-						CreatedOnToolsVersion = 10.1;
-					};
 					783F75A521DCBA3900F573BA = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -284,20 +240,11 @@
 			projectRoot = "";
 			targets = (
 				783F75A521DCBA3900F573BA /* g729codec */,
-				78260CCB21F1C1ED00659ED5 /* g729cpluss */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		78260CC821F1C1ED00659ED5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78260CCF21F1C1ED00659ED5 /* main.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		783F75A221DCBA3900F573BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +274,7 @@
 				783F75AA21DCBA3900F573BA /* main.cc in Sources */,
 				783F777821DE0E7E00F573BA /* gainpred.c in Sources */,
 				783F779721DE0E7E00F573BA /* lpcfunc.c in Sources */,
+				7805D40C21F406AF00194C98 /* g729_main_test.cc in Sources */,
 				783F778821DE0E7E00F573BA /* basic_op.c in Sources */,
 				783F778A21DE0E7E00F573BA /* dspfunc.c in Sources */,
 				783F779121DE0E7E00F573BA /* dec_lag3.c in Sources */,
@@ -340,24 +288,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		78260CD121F1C1ED00659ED5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67Q24N9KP5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		78260CD221F1C1ED00659ED5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67Q24N9KP5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		783F75AB21DCBA3900F573BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -490,15 +420,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		78260CD021F1C1ED00659ED5 /* Build configuration list for PBXNativeTarget "g729cpluss" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78260CD121F1C1ED00659ED5 /* Debug */,
-				78260CD221F1C1ED00659ED5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		783F75A121DCBA3900F573BA /* Build configuration list for PBXProject "g729codec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
