@@ -59,11 +59,60 @@
 		78260E0421F55FD600659ED5 /* lspgetqe.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD421F55FD600659ED5 /* lspgetqe.c */; };
 		78260E0521F55FD600659ED5 /* bwfw.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD721F55FD600659ED5 /* bwfw.c */; };
 		78260E0621F55FD600659ED5 /* lpcfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD821F55FD600659ED5 /* lpcfunc.c */; };
+		78260E0E21F5A20500659ED5 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 78260E0D21F5A20500659ED5 /* main.cc */; };
+		78260E1221F5A22F00659ED5 /* waveoperator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D44C21F416BE00194C98 /* waveoperator.cc */; };
+		78260E1321F5A23A00659ED5 /* pesq_calculate.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D44821F4121A00194C98 /* pesq_calculate.cc */; };
+		78260E1421F5A23A00659ED5 /* dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43821F40ED800194C98 /* dsp.c */; };
+		78260E1521F5A23A00659ED5 /* pesqmain.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43A21F40ED800194C98 /* pesqmain.c */; };
+		78260E1621F5A23A00659ED5 /* pesqmod.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43D21F40ED800194C98 /* pesqmod.c */; };
+		78260E1721F5A23A00659ED5 /* pesqdsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D44121F40ED800194C98 /* pesqdsp.c */; };
+		78260E1821F5A23A00659ED5 /* pesqio.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43C21F40ED800194C98 /* pesqio.c */; };
+		78260E4521F5A25400659ED5 /* G729Codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78260E1A21F5A25400659ED5 /* G729Codec.cpp */; };
+		78260E4621F5A25400659ED5 /* g729_main_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 78260E1B21F5A25400659ED5 /* g729_main_test.cc */; };
+		78260E4721F5A25400659ED5 /* gainpred.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E1C21F5A25400659ED5 /* gainpred.c */; };
+		78260E4821F5A25400659ED5 /* taming.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E1E21F5A25400659ED5 /* taming.c */; };
+		78260E4921F5A25400659ED5 /* cod_ld8a.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2121F5A25400659ED5 /* cod_ld8a.c */; };
+		78260E4A21F5A25400659ED5 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2221F5A25400659ED5 /* util.c */; };
+		78260E4B21F5A25400659ED5 /* p_parity.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2321F5A25400659ED5 /* p_parity.c */; };
+		78260E4C21F5A25400659ED5 /* bits.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2621F5A25400659ED5 /* bits.c */; };
+		78260E4D21F5A25400659ED5 /* tab_ld8a.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2721F5A25400659ED5 /* tab_ld8a.c */; };
+		78260E4E21F5A25400659ED5 /* postfilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2821F5A25400659ED5 /* postfilt.c */; };
+		78260E4F21F5A25400659ED5 /* lspgetq.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2921F5A25400659ED5 /* lspgetq.c */; };
+		78260E5021F5A25400659ED5 /* coder.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2A21F5A25400659ED5 /* coder.c */; };
+		78260E5121F5A25400659ED5 /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2B21F5A25400659ED5 /* filter.c */; };
+		78260E5221F5A25400659ED5 /* qua_gain.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2C21F5A25400659ED5 /* qua_gain.c */; };
+		78260E5421F5A25400659ED5 /* lspdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2E21F5A25400659ED5 /* lspdec.c */; };
+		78260E5521F5A25400659ED5 /* oper_32b.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E2F21F5A25400659ED5 /* oper_32b.c */; };
+		78260E5621F5A25400659ED5 /* dec_gain.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3021F5A25400659ED5 /* dec_gain.c */; };
+		78260E5721F5A25400659ED5 /* basic_op.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3121F5A25400659ED5 /* basic_op.c */; };
+		78260E5821F5A25400659ED5 /* acelp_ca.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3221F5A25400659ED5 /* acelp_ca.c */; };
+		78260E5921F5A25400659ED5 /* dspfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3421F5A25400659ED5 /* dspfunc.c */; };
+		78260E5A21F5A25400659ED5 /* post_pro.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3621F5A25400659ED5 /* post_pro.c */; };
+		78260E5B21F5A25400659ED5 /* dec_ld8a.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3721F5A25400659ED5 /* dec_ld8a.c */; };
+		78260E5D21F5A25400659ED5 /* de_acelp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3921F5A25400659ED5 /* de_acelp.c */; };
+		78260E5E21F5A25400659ED5 /* cor_func.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3A21F5A25400659ED5 /* cor_func.c */; };
+		78260E5F21F5A25400659ED5 /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3B21F5A25400659ED5 /* decoder.c */; };
+		78260E6021F5A25400659ED5 /* dec_lag3.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3C21F5A25400659ED5 /* dec_lag3.c */; };
+		78260E6121F5A25400659ED5 /* pitch_a.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3D21F5A25400659ED5 /* pitch_a.c */; };
+		78260E6221F5A25400659ED5 /* pred_lt3.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3E21F5A25400659ED5 /* pred_lt3.c */; };
+		78260E6321F5A25400659ED5 /* pre_proc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E3F21F5A25400659ED5 /* pre_proc.c */; };
+		78260E6421F5A25400659ED5 /* lpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E4021F5A25400659ED5 /* lpc.c */; };
+		78260E6521F5A25400659ED5 /* qua_lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E4121F5A25400659ED5 /* qua_lsp.c */; };
+		78260E6621F5A25400659ED5 /* lpcfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260E4421F5A25400659ED5 /* lpcfunc.c */; };
 		783F75AA21DCBA3900F573BA /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 783F75A921DCBA3900F573BA /* main.cc */; };
 		783F768621DDE8E100F573BA /* Ch_f1_8k.pcm in Copy Files */ = {isa = PBXBuildFile; fileRef = 783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		78260E0921F5A20500659ED5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		783F75A421DCBA3900F573BA /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -79,7 +128,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7805D43121F40DE600194C98 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7805D43721F40ED800194C98 /* pesq.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pesq.h; sourceTree = "<group>"; };
 		7805D43821F40ED800194C98 /* dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsp.c; sourceTree = "<group>"; };
 		7805D43A21F40ED800194C98 /* pesqmain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pesqmain.c; sourceTree = "<group>"; };
@@ -153,12 +201,64 @@
 		78260DD621F55FD600659ED5 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
 		78260DD721F55FD600659ED5 /* bwfw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bwfw.c; sourceTree = "<group>"; };
 		78260DD821F55FD600659ED5 /* lpcfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpcfunc.c; sourceTree = "<group>"; };
+		78260E0B21F5A20500659ED5 /* g729codeca */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g729codeca; sourceTree = BUILT_PRODUCTS_DIR; };
+		78260E0D21F5A20500659ED5 /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		78260E1A21F5A25400659ED5 /* G729Codec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = G729Codec.cpp; sourceTree = "<group>"; };
+		78260E1B21F5A25400659ED5 /* g729_main_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = g729_main_test.cc; sourceTree = "<group>"; };
+		78260E1C21F5A25400659ED5 /* gainpred.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gainpred.c; sourceTree = "<group>"; };
+		78260E1D21F5A25400659ED5 /* basic_op.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_op.h; sourceTree = "<group>"; };
+		78260E1E21F5A25400659ED5 /* taming.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = taming.c; sourceTree = "<group>"; };
+		78260E1F21F5A25400659ED5 /* oper_32b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oper_32b.h; sourceTree = "<group>"; };
+		78260E2021F5A25400659ED5 /* ld8a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ld8a.h; sourceTree = "<group>"; };
+		78260E2121F5A25400659ED5 /* cod_ld8a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cod_ld8a.c; sourceTree = "<group>"; };
+		78260E2221F5A25400659ED5 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		78260E2321F5A25400659ED5 /* p_parity.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = p_parity.c; sourceTree = "<group>"; };
+		78260E2421F5A25400659ED5 /* G729Codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G729Codec.h; sourceTree = "<group>"; };
+		78260E2521F5A25400659ED5 /* g729_main_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = g729_main_test.h; sourceTree = "<group>"; };
+		78260E2621F5A25400659ED5 /* bits.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bits.c; sourceTree = "<group>"; };
+		78260E2721F5A25400659ED5 /* tab_ld8a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tab_ld8a.c; sourceTree = "<group>"; };
+		78260E2821F5A25400659ED5 /* postfilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = postfilt.c; sourceTree = "<group>"; };
+		78260E2921F5A25400659ED5 /* lspgetq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lspgetq.c; sourceTree = "<group>"; };
+		78260E2A21F5A25400659ED5 /* coder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coder.c; sourceTree = "<group>"; };
+		78260E2B21F5A25400659ED5 /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter.c; sourceTree = "<group>"; };
+		78260E2C21F5A25400659ED5 /* qua_gain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qua_gain.c; sourceTree = "<group>"; };
+		78260E2D21F5A25400659ED5 /* decoder.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = decoder.mak; sourceTree = "<group>"; };
+		78260E2E21F5A25400659ED5 /* lspdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lspdec.c; sourceTree = "<group>"; };
+		78260E2F21F5A25400659ED5 /* oper_32b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oper_32b.c; sourceTree = "<group>"; };
+		78260E3021F5A25400659ED5 /* dec_gain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_gain.c; sourceTree = "<group>"; };
+		78260E3121F5A25400659ED5 /* basic_op.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = basic_op.c; sourceTree = "<group>"; };
+		78260E3221F5A25400659ED5 /* acelp_ca.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acelp_ca.c; sourceTree = "<group>"; };
+		78260E3321F5A25400659ED5 /* rename.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = rename.sh; sourceTree = "<group>"; };
+		78260E3421F5A25400659ED5 /* dspfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dspfunc.c; sourceTree = "<group>"; };
+		78260E3521F5A25400659ED5 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		78260E3621F5A25400659ED5 /* post_pro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = post_pro.c; sourceTree = "<group>"; };
+		78260E3721F5A25400659ED5 /* dec_ld8a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_ld8a.c; sourceTree = "<group>"; };
+		78260E3821F5A25400659ED5 /* coder.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = coder.mak; sourceTree = "<group>"; };
+		78260E3921F5A25400659ED5 /* de_acelp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = de_acelp.c; sourceTree = "<group>"; };
+		78260E3A21F5A25400659ED5 /* cor_func.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cor_func.c; sourceTree = "<group>"; };
+		78260E3B21F5A25400659ED5 /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
+		78260E3C21F5A25400659ED5 /* dec_lag3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_lag3.c; sourceTree = "<group>"; };
+		78260E3D21F5A25400659ED5 /* pitch_a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pitch_a.c; sourceTree = "<group>"; };
+		78260E3E21F5A25400659ED5 /* pred_lt3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pred_lt3.c; sourceTree = "<group>"; };
+		78260E3F21F5A25400659ED5 /* pre_proc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pre_proc.c; sourceTree = "<group>"; };
+		78260E4021F5A25400659ED5 /* lpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpc.c; sourceTree = "<group>"; };
+		78260E4121F5A25400659ED5 /* qua_lsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qua_lsp.c; sourceTree = "<group>"; };
+		78260E4221F5A25400659ED5 /* tab_ld8a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tab_ld8a.h; sourceTree = "<group>"; };
+		78260E4321F5A25400659ED5 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		78260E4421F5A25400659ED5 /* lpcfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpcfunc.c; sourceTree = "<group>"; };
 		783F75A621DCBA3900F573BA /* g729codec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g729codec; sourceTree = BUILT_PRODUCTS_DIR; };
 		783F75A921DCBA3900F573BA /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
 		783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ch_f1_8k.pcm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		78260E0821F5A20500659ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		783F75A321DCBA3900F573BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,14 +269,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7805D43021F40DE600194C98 /* g729cplusplus */ = {
-			isa = PBXGroup;
-			children = (
-				7805D43121F40DE600194C98 /* main.cpp */,
-			);
-			path = g729cplusplus;
-			sourceTree = "<group>";
-		};
 		7805D43621F40ED800194C98 /* PESQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,11 +363,71 @@
 			path = g729codec/g729I;
 			sourceTree = SOURCE_ROOT;
 		};
+		78260E0C21F5A20500659ED5 /* g729codeca */ = {
+			isa = PBXGroup;
+			children = (
+				78260E1921F5A25400659ED5 /* g729a */,
+				78260E0D21F5A20500659ED5 /* main.cc */,
+			);
+			path = g729codeca;
+			sourceTree = "<group>";
+		};
+		78260E1921F5A25400659ED5 /* g729a */ = {
+			isa = PBXGroup;
+			children = (
+				78260E1C21F5A25400659ED5 /* gainpred.c */,
+				78260E1D21F5A25400659ED5 /* basic_op.h */,
+				78260E1E21F5A25400659ED5 /* taming.c */,
+				78260E1F21F5A25400659ED5 /* oper_32b.h */,
+				78260E2021F5A25400659ED5 /* ld8a.h */,
+				78260E2121F5A25400659ED5 /* cod_ld8a.c */,
+				78260E2221F5A25400659ED5 /* util.c */,
+				78260E2321F5A25400659ED5 /* p_parity.c */,
+				78260E2621F5A25400659ED5 /* bits.c */,
+				78260E2721F5A25400659ED5 /* tab_ld8a.c */,
+				78260E2821F5A25400659ED5 /* postfilt.c */,
+				78260E2921F5A25400659ED5 /* lspgetq.c */,
+				78260E2A21F5A25400659ED5 /* coder.c */,
+				78260E2B21F5A25400659ED5 /* filter.c */,
+				78260E2C21F5A25400659ED5 /* qua_gain.c */,
+				78260E2D21F5A25400659ED5 /* decoder.mak */,
+				78260E2E21F5A25400659ED5 /* lspdec.c */,
+				78260E2F21F5A25400659ED5 /* oper_32b.c */,
+				78260E3021F5A25400659ED5 /* dec_gain.c */,
+				78260E3121F5A25400659ED5 /* basic_op.c */,
+				78260E3221F5A25400659ED5 /* acelp_ca.c */,
+				78260E3321F5A25400659ED5 /* rename.sh */,
+				78260E3421F5A25400659ED5 /* dspfunc.c */,
+				78260E3521F5A25400659ED5 /* readme.txt */,
+				78260E3621F5A25400659ED5 /* post_pro.c */,
+				78260E3721F5A25400659ED5 /* dec_ld8a.c */,
+				78260E3821F5A25400659ED5 /* coder.mak */,
+				78260E3921F5A25400659ED5 /* de_acelp.c */,
+				78260E3A21F5A25400659ED5 /* cor_func.c */,
+				78260E3B21F5A25400659ED5 /* decoder.c */,
+				78260E3C21F5A25400659ED5 /* dec_lag3.c */,
+				78260E3D21F5A25400659ED5 /* pitch_a.c */,
+				78260E3E21F5A25400659ED5 /* pred_lt3.c */,
+				78260E3F21F5A25400659ED5 /* pre_proc.c */,
+				78260E4021F5A25400659ED5 /* lpc.c */,
+				78260E4121F5A25400659ED5 /* qua_lsp.c */,
+				78260E4221F5A25400659ED5 /* tab_ld8a.h */,
+				78260E4321F5A25400659ED5 /* typedef.h */,
+				78260E4421F5A25400659ED5 /* lpcfunc.c */,
+				78260E1A21F5A25400659ED5 /* G729Codec.cpp */,
+				78260E2421F5A25400659ED5 /* G729Codec.h */,
+				78260E1B21F5A25400659ED5 /* g729_main_test.cc */,
+				78260E2521F5A25400659ED5 /* g729_main_test.h */,
+			);
+			name = g729a;
+			path = g729codec/g729a;
+			sourceTree = SOURCE_ROOT;
+		};
 		783F759D21DCBA3900F573BA = {
 			isa = PBXGroup;
 			children = (
 				783F75A821DCBA3900F573BA /* g729codec */,
-				7805D43021F40DE600194C98 /* g729cplusplus */,
+				78260E0C21F5A20500659ED5 /* g729codeca */,
 				783F75A721DCBA3900F573BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -284,6 +436,7 @@
 			isa = PBXGroup;
 			children = (
 				783F75A621DCBA3900F573BA /* g729codec */,
+				78260E0B21F5A20500659ED5 /* g729codeca */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,6 +457,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		78260E0A21F5A20500659ED5 /* g729codeca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78260E0F21F5A20500659ED5 /* Build configuration list for PBXNativeTarget "g729codeca" */;
+			buildPhases = (
+				78260E0721F5A20500659ED5 /* Sources */,
+				78260E0821F5A20500659ED5 /* Frameworks */,
+				78260E0921F5A20500659ED5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = g729codeca;
+			productName = g729codeca;
+			productReference = 78260E0B21F5A20500659ED5 /* g729codeca */;
+			productType = "com.apple.product-type.tool";
+		};
 		783F75A521DCBA3900F573BA /* g729codec */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 783F75AD21DCBA3900F573BA /* Build configuration list for PBXNativeTarget "g729codec" */;
@@ -330,6 +500,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = JFChen;
 				TargetAttributes = {
+					78260E0A21F5A20500659ED5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					783F75A521DCBA3900F573BA = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -348,11 +521,59 @@
 			projectRoot = "";
 			targets = (
 				783F75A521DCBA3900F573BA /* g729codec */,
+				78260E0A21F5A20500659ED5 /* g729codeca */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		78260E0721F5A20500659ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260E6221F5A25400659ED5 /* pred_lt3.c in Sources */,
+				78260E5E21F5A25400659ED5 /* cor_func.c in Sources */,
+				78260E5B21F5A25400659ED5 /* dec_ld8a.c in Sources */,
+				78260E1221F5A22F00659ED5 /* waveoperator.cc in Sources */,
+				78260E1721F5A23A00659ED5 /* pesqdsp.c in Sources */,
+				78260E1821F5A23A00659ED5 /* pesqio.c in Sources */,
+				78260E4B21F5A25400659ED5 /* p_parity.c in Sources */,
+				78260E5421F5A25400659ED5 /* lspdec.c in Sources */,
+				78260E1421F5A23A00659ED5 /* dsp.c in Sources */,
+				78260E4521F5A25400659ED5 /* G729Codec.cpp in Sources */,
+				78260E5221F5A25400659ED5 /* qua_gain.c in Sources */,
+				78260E5F21F5A25400659ED5 /* decoder.c in Sources */,
+				78260E4F21F5A25400659ED5 /* lspgetq.c in Sources */,
+				78260E6421F5A25400659ED5 /* lpc.c in Sources */,
+				78260E5D21F5A25400659ED5 /* de_acelp.c in Sources */,
+				78260E5621F5A25400659ED5 /* dec_gain.c in Sources */,
+				78260E4721F5A25400659ED5 /* gainpred.c in Sources */,
+				78260E5A21F5A25400659ED5 /* post_pro.c in Sources */,
+				78260E4D21F5A25400659ED5 /* tab_ld8a.c in Sources */,
+				78260E4E21F5A25400659ED5 /* postfilt.c in Sources */,
+				78260E6321F5A25400659ED5 /* pre_proc.c in Sources */,
+				78260E5121F5A25400659ED5 /* filter.c in Sources */,
+				78260E5821F5A25400659ED5 /* acelp_ca.c in Sources */,
+				78260E5721F5A25400659ED5 /* basic_op.c in Sources */,
+				78260E4621F5A25400659ED5 /* g729_main_test.cc in Sources */,
+				78260E4921F5A25400659ED5 /* cod_ld8a.c in Sources */,
+				78260E4C21F5A25400659ED5 /* bits.c in Sources */,
+				78260E1321F5A23A00659ED5 /* pesq_calculate.cc in Sources */,
+				78260E4A21F5A25400659ED5 /* util.c in Sources */,
+				78260E6121F5A25400659ED5 /* pitch_a.c in Sources */,
+				78260E6621F5A25400659ED5 /* lpcfunc.c in Sources */,
+				78260E0E21F5A20500659ED5 /* main.cc in Sources */,
+				78260E5921F5A25400659ED5 /* dspfunc.c in Sources */,
+				78260E5521F5A25400659ED5 /* oper_32b.c in Sources */,
+				78260E4821F5A25400659ED5 /* taming.c in Sources */,
+				78260E5021F5A25400659ED5 /* coder.c in Sources */,
+				78260E6021F5A25400659ED5 /* dec_lag3.c in Sources */,
+				78260E1521F5A23A00659ED5 /* pesqmain.c in Sources */,
+				78260E6521F5A25400659ED5 /* qua_lsp.c in Sources */,
+				78260E1621F5A23A00659ED5 /* pesqmod.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		783F75A221DCBA3900F573BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,6 +636,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		78260E1021F5A20500659ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Q24N9KP5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		78260E1121F5A20500659ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67Q24N9KP5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		783F75AB21DCBA3900F573BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +786,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		78260E0F21F5A20500659ED5 /* Build configuration list for PBXNativeTarget "g729codeca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260E1021F5A20500659ED5 /* Debug */,
+				78260E1121F5A20500659ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		783F75A121DCBA3900F573BA /* Build configuration list for PBXProject "g729codec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

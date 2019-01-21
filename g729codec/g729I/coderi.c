@@ -45,12 +45,6 @@
 #include "ld8cp.h"
 #include "dtx.h"
 #include "octet.h"
-#if defined(__BORLANDC__)
-extern unsigned _stklen = 48000U;
-#endif
-
-/*#define SYNC*/
-#define PREPROC
 
 int encoder_main(int argc, const char *argv[] )
 {
@@ -67,7 +61,7 @@ int encoder_main(int argc, const char *argv[] )
     Word16 i, frame;               /* frame counter */
     Word32 count_frame;
     
-    Word16 nb_words, dtx_enable;
+    Word16 dtx_enable;
     
     if ( (f_speech = fopen(argv[1], "rb")) == NULL) {
         printf("%s - Error opening file  %s !!\n", argv[0], argv[1]);
@@ -107,8 +101,6 @@ int encoder_main(int argc, const char *argv[] )
         Coder_ld8c(prm, frame, dtx_enable, rate);
         
         prm2bits_ld8c( prm+1, serial);
-        
-//        nb_words = (Word16)serial[1] +  (Word16)2;
         
         if (fwrite(serial, sizeof(char), 10, f_serial) != (size_t)10)
             printf("Write Error for frame %d\n", count_frame);
