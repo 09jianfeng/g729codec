@@ -21,7 +21,7 @@
 #define PRM_SIZE_D      10       /* Size of vector of analysis parameters.    */
 #define PRM_SIZE_SID    4        /* Size of vector of analysis parameters.    */
 
-#define SERIAL_SIZE_E (116+4)  /* Bits/frame + bfi+ number of speech bits
+#define SERIAL_SIZE_E (80+4)  /* Bits/frame + bfi+ number of speech bits
                                              + bit for mode + protection */
 
 #define RATE_6400       64      /* Low  rate  (6400 bit/s)       */
@@ -247,14 +247,14 @@ void Dec_gaine(
  * Bitstream functions                                                      *
  *--------------------------------------------------------------------------*/
 void bits2prm_ld8c(
-    Word16 bits[],  /* I   serial bits (nb_bits)                          */
+    unsigned char bits[],  /* I   serial bits (nb_bits)                          */
     Word16 prm[]   /* O   output: decoded parameters (11 parameters)     */
 );
 
 
 void  prm2bits_ld8c(
   Word16 prm[],           /* input : encoded parameters  (PRM_SIZE parameters)  */
-  Word16 bits[]          /* output: serial bits (SERIAL_SIZE ) bits[0] = bfi
+  unsigned char bits[]          /* output: serial bits (SERIAL_SIZE ) bits[0] = bfi
                                     bits[1] = nbbits */
 );
 

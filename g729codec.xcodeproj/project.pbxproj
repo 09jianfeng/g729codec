@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7805D40C21F406AF00194C98 /* g729_main_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D40B21F406AF00194C98 /* g729_main_test.cc */; };
 		7805D44221F40ED800194C98 /* dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43821F40ED800194C98 /* dsp.c */; };
 		7805D44421F40ED800194C98 /* pesqmain.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43A21F40ED800194C98 /* pesqmain.c */; };
 		7805D44521F40ED800194C98 /* pesqio.c in Sources */ = {isa = PBXBuildFile; fileRef = 7805D43C21F40ED800194C98 /* pesqio.c */; };
@@ -16,39 +15,52 @@
 		7805D44A21F4121A00194C98 /* pesq_calculate.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D44821F4121A00194C98 /* pesq_calculate.cc */; };
 		7805D44E21F416BE00194C98 /* waveoperator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7805D44C21F416BE00194C98 /* waveoperator.cc */; };
 		7805D45021F4193200194C98 /* Ch_f1_8k.wav in Copy Files */ = {isa = PBXBuildFile; fileRef = 7805D44F21F4192400194C98 /* Ch_f1_8k.wav */; };
-		78260CC721F1B99E00659ED5 /* G729Codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78260CC521F1B99E00659ED5 /* G729Codec.cpp */; };
+		78260DD921F55FD600659ED5 /* tabld8cp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260D9D21F55FD600659ED5 /* tabld8cp.c */; };
+		78260DDA21F55FD600659ED5 /* gainpred.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260D9E21F55FD600659ED5 /* gainpred.c */; };
+		78260DDB21F55FD600659ED5 /* coderi.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DA021F55FD600659ED5 /* coderi.c */; };
+		78260DDC21F55FD600659ED5 /* taming.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DA121F55FD600659ED5 /* taming.c */; };
+		78260DDD21F55FD600659ED5 /* pwf.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DA221F55FD600659ED5 /* pwf.c */; };
+		78260DDE21F55FD600659ED5 /* q_gaincp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DA521F55FD600659ED5 /* q_gaincp.c */; };
+		78260DDF21F55FD600659ED5 /* dec_sid.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DA621F55FD600659ED5 /* dec_sid.c */; };
+		78260DE021F55FD600659ED5 /* degaincp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DA721F55FD600659ED5 /* degaincp.c */; };
+		78260DE121F55FD600659ED5 /* codld8cp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DA821F55FD600659ED5 /* codld8cp.c */; };
+		78260DE221F55FD600659ED5 /* lspdece.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DA921F55FD600659ED5 /* lspdece.c */; };
+		78260DE321F55FD600659ED5 /* bitscp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DAA21F55FD600659ED5 /* bitscp.c */; };
+		78260DE421F55FD600659ED5 /* p_parity.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DAB21F55FD600659ED5 /* p_parity.c */; };
+		78260DE521F55FD600659ED5 /* dtx.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DAC21F55FD600659ED5 /* dtx.c */; };
+		78260DE621F55FD600659ED5 /* filtere.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DAD21F55FD600659ED5 /* filtere.c */; };
+		78260DE721F55FD600659ED5 /* pstcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DAE21F55FD600659ED5 /* pstcp.c */; };
+		78260DE821F55FD600659ED5 /* tab_ld8k.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DAF21F55FD600659ED5 /* tab_ld8k.c */; };
+		78260DE921F55FD600659ED5 /* decoderi.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DB221F55FD600659ED5 /* decoderi.c */; };
+		78260DEA21F55FD600659ED5 /* qsidlsf.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DB321F55FD600659ED5 /* qsidlsf.c */; };
+		78260DEB21F55FD600659ED5 /* oper_32b.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DB421F55FD600659ED5 /* oper_32b.c */; };
+		78260DEC21F55FD600659ED5 /* phdisp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DB621F55FD600659ED5 /* phdisp.c */; };
+		78260DED21F55FD600659ED5 /* utilcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DB721F55FD600659ED5 /* utilcp.c */; };
+		78260DEE21F55FD600659ED5 /* basic_op.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DB821F55FD600659ED5 /* basic_op.c */; };
+		78260DEF21F55FD600659ED5 /* qsidgain.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DBA21F55FD600659ED5 /* qsidgain.c */; };
+		78260DF021F55FD600659ED5 /* decld8cp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DBB21F55FD600659ED5 /* decld8cp.c */; };
+		78260DF121F55FD600659ED5 /* mus_dtct.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DBC21F55FD600659ED5 /* mus_dtct.c */; };
+		78260DF221F55FD600659ED5 /* pitchcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DBD21F55FD600659ED5 /* pitchcp.c */; };
+		78260DF321F55FD600659ED5 /* dspfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DBE21F55FD600659ED5 /* dspfunc.c */; };
+		78260DF421F55FD600659ED5 /* pwfe.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DBF21F55FD600659ED5 /* pwfe.c */; };
+		78260DF721F55FD600659ED5 /* track_pi.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DC321F55FD600659ED5 /* track_pi.c */; };
+		78260DF821F55FD600659ED5 /* dacelpcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DC421F55FD600659ED5 /* dacelpcp.c */; };
+		78260DF921F55FD600659ED5 /* post_pro.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DC721F55FD600659ED5 /* post_pro.c */; };
+		78260DFA21F55FD600659ED5 /* bwfwfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DC821F55FD600659ED5 /* bwfwfunc.c */; };
+		78260DFB21F55FD600659ED5 /* acelp_cp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DC921F55FD600659ED5 /* acelp_cp.c */; };
+		78260DFC21F55FD600659ED5 /* declagcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DCB21F55FD600659ED5 /* declagcp.c */; };
+		78260DFD21F55FD600659ED5 /* qua_lspe.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DCC21F55FD600659ED5 /* qua_lspe.c */; };
+		78260DFE21F55FD600659ED5 /* calcexc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DCE21F55FD600659ED5 /* calcexc.c */; };
+		78260DFF21F55FD600659ED5 /* pred_lt3.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DCF21F55FD600659ED5 /* pred_lt3.c */; };
+		78260E0021F55FD600659ED5 /* tab_dtx.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD021F55FD600659ED5 /* tab_dtx.c */; };
+		78260E0121F55FD600659ED5 /* pre_proc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD121F55FD600659ED5 /* pre_proc.c */; };
+		78260E0221F55FD600659ED5 /* vad.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD221F55FD600659ED5 /* vad.c */; };
+		78260E0321F55FD600659ED5 /* lpccp.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD321F55FD600659ED5 /* lpccp.c */; };
+		78260E0421F55FD600659ED5 /* lspgetqe.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD421F55FD600659ED5 /* lspgetqe.c */; };
+		78260E0521F55FD600659ED5 /* bwfw.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD721F55FD600659ED5 /* bwfw.c */; };
+		78260E0621F55FD600659ED5 /* lpcfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 78260DD821F55FD600659ED5 /* lpcfunc.c */; };
 		783F75AA21DCBA3900F573BA /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 783F75A921DCBA3900F573BA /* main.cc */; };
 		783F768621DDE8E100F573BA /* Ch_f1_8k.pcm in Copy Files */ = {isa = PBXBuildFile; fileRef = 783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */; };
-		783F777821DE0E7E00F573BA /* gainpred.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775121DE0E7E00F573BA /* gainpred.c */; };
-		783F777921DE0E7E00F573BA /* taming.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775321DE0E7E00F573BA /* taming.c */; };
-		783F777A21DE0E7E00F573BA /* cod_ld8a.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775621DE0E7E00F573BA /* cod_ld8a.c */; };
-		783F777B21DE0E7E00F573BA /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775721DE0E7E00F573BA /* util.c */; };
-		783F777C21DE0E7E00F573BA /* p_parity.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775821DE0E7E00F573BA /* p_parity.c */; };
-		783F777D21DE0E7E00F573BA /* bits.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775921DE0E7E00F573BA /* bits.c */; };
-		783F777E21DE0E7E00F573BA /* tab_ld8a.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775A21DE0E7E00F573BA /* tab_ld8a.c */; };
-		783F777F21DE0E7E00F573BA /* postfilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775B21DE0E7E00F573BA /* postfilt.c */; };
-		783F778021DE0E7E00F573BA /* lspgetq.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775C21DE0E7E00F573BA /* lspgetq.c */; };
-		783F778121DE0E7E00F573BA /* coder.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775D21DE0E7E00F573BA /* coder.c */; };
-		783F778221DE0E7E00F573BA /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775E21DE0E7E00F573BA /* filter.c */; };
-		783F778321DE0E7E00F573BA /* qua_gain.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F775F21DE0E7E00F573BA /* qua_gain.c */; };
-		783F778521DE0E7E00F573BA /* lspdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776121DE0E7E00F573BA /* lspdec.c */; };
-		783F778621DE0E7E00F573BA /* oper_32b.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776221DE0E7E00F573BA /* oper_32b.c */; };
-		783F778721DE0E7E00F573BA /* dec_gain.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776321DE0E7E00F573BA /* dec_gain.c */; };
-		783F778821DE0E7E00F573BA /* basic_op.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776421DE0E7E00F573BA /* basic_op.c */; };
-		783F778921DE0E7E00F573BA /* acelp_ca.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776521DE0E7E00F573BA /* acelp_ca.c */; };
-		783F778A21DE0E7E00F573BA /* dspfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776721DE0E7E00F573BA /* dspfunc.c */; };
-		783F778B21DE0E7E00F573BA /* post_pro.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776921DE0E7E00F573BA /* post_pro.c */; };
-		783F778C21DE0E7E00F573BA /* dec_ld8a.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776A21DE0E7E00F573BA /* dec_ld8a.c */; };
-		783F778E21DE0E7E00F573BA /* de_acelp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776C21DE0E7E00F573BA /* de_acelp.c */; };
-		783F778F21DE0E7E00F573BA /* cor_func.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776D21DE0E7E00F573BA /* cor_func.c */; };
-		783F779021DE0E7E00F573BA /* decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776E21DE0E7E00F573BA /* decoder.c */; };
-		783F779121DE0E7E00F573BA /* dec_lag3.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F776F21DE0E7E00F573BA /* dec_lag3.c */; };
-		783F779221DE0E7E00F573BA /* pitch_a.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F777021DE0E7E00F573BA /* pitch_a.c */; };
-		783F779321DE0E7E00F573BA /* pred_lt3.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F777121DE0E7E00F573BA /* pred_lt3.c */; };
-		783F779421DE0E7E00F573BA /* pre_proc.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F777221DE0E7E00F573BA /* pre_proc.c */; };
-		783F779521DE0E7E00F573BA /* lpc.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F777321DE0E7E00F573BA /* lpc.c */; };
-		783F779621DE0E7E00F573BA /* qua_lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F777421DE0E7E00F573BA /* qua_lsp.c */; };
-		783F779721DE0E7E00F573BA /* lpcfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 783F777721DE0E7E00F573BA /* lpcfunc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,8 +79,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7805D40A21F406AF00194C98 /* g729_main_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = g729_main_test.h; sourceTree = "<group>"; };
-		7805D40B21F406AF00194C98 /* g729_main_test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = g729_main_test.cc; sourceTree = "<group>"; };
 		7805D43121F40DE600194C98 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7805D43721F40ED800194C98 /* pesq.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pesq.h; sourceTree = "<group>"; };
 		7805D43821F40ED800194C98 /* dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsp.c; sourceTree = "<group>"; };
@@ -83,50 +93,69 @@
 		7805D44C21F416BE00194C98 /* waveoperator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = waveoperator.cc; sourceTree = "<group>"; };
 		7805D44D21F416BE00194C98 /* waveoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waveoperator.h; sourceTree = "<group>"; };
 		7805D44F21F4192400194C98 /* Ch_f1_8k.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ch_f1_8k.wav; sourceTree = "<group>"; };
-		78260CC521F1B99E00659ED5 /* G729Codec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = G729Codec.cpp; sourceTree = "<group>"; };
-		78260CC621F1B99E00659ED5 /* G729Codec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G729Codec.h; sourceTree = "<group>"; };
+		78260D9D21F55FD600659ED5 /* tabld8cp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tabld8cp.c; sourceTree = "<group>"; };
+		78260D9E21F55FD600659ED5 /* gainpred.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gainpred.c; sourceTree = "<group>"; };
+		78260D9F21F55FD600659ED5 /* basic_op.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_op.h; sourceTree = "<group>"; };
+		78260DA021F55FD600659ED5 /* coderi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coderi.c; sourceTree = "<group>"; };
+		78260DA121F55FD600659ED5 /* taming.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = taming.c; sourceTree = "<group>"; };
+		78260DA221F55FD600659ED5 /* pwf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwf.c; sourceTree = "<group>"; };
+		78260DA321F55FD600659ED5 /* oper_32b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oper_32b.h; sourceTree = "<group>"; };
+		78260DA421F55FD600659ED5 /* ld8k.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ld8k.h; sourceTree = "<group>"; };
+		78260DA521F55FD600659ED5 /* q_gaincp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = q_gaincp.c; sourceTree = "<group>"; };
+		78260DA621F55FD600659ED5 /* dec_sid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_sid.c; sourceTree = "<group>"; };
+		78260DA721F55FD600659ED5 /* degaincp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = degaincp.c; sourceTree = "<group>"; };
+		78260DA821F55FD600659ED5 /* codld8cp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = codld8cp.c; sourceTree = "<group>"; };
+		78260DA921F55FD600659ED5 /* lspdece.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lspdece.c; sourceTree = "<group>"; };
+		78260DAA21F55FD600659ED5 /* bitscp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitscp.c; sourceTree = "<group>"; };
+		78260DAB21F55FD600659ED5 /* p_parity.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = p_parity.c; sourceTree = "<group>"; };
+		78260DAC21F55FD600659ED5 /* dtx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dtx.c; sourceTree = "<group>"; };
+		78260DAD21F55FD600659ED5 /* filtere.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filtere.c; sourceTree = "<group>"; };
+		78260DAE21F55FD600659ED5 /* pstcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pstcp.c; sourceTree = "<group>"; };
+		78260DAF21F55FD600659ED5 /* tab_ld8k.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tab_ld8k.c; sourceTree = "<group>"; };
+		78260DB021F55FD600659ED5 /* tab_dtx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tab_dtx.h; sourceTree = "<group>"; };
+		78260DB121F55FD600659ED5 /* vad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad.h; sourceTree = "<group>"; };
+		78260DB221F55FD600659ED5 /* decoderi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoderi.c; sourceTree = "<group>"; };
+		78260DB321F55FD600659ED5 /* qsidlsf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qsidlsf.c; sourceTree = "<group>"; };
+		78260DB421F55FD600659ED5 /* oper_32b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oper_32b.c; sourceTree = "<group>"; };
+		78260DB521F55FD600659ED5 /* bitstrea.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bitstrea.txt; sourceTree = "<group>"; };
+		78260DB621F55FD600659ED5 /* phdisp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = phdisp.c; sourceTree = "<group>"; };
+		78260DB721F55FD600659ED5 /* utilcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utilcp.c; sourceTree = "<group>"; };
+		78260DB821F55FD600659ED5 /* basic_op.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = basic_op.c; sourceTree = "<group>"; };
+		78260DB921F55FD600659ED5 /* tabld8cp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabld8cp.h; sourceTree = "<group>"; };
+		78260DBA21F55FD600659ED5 /* qsidgain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qsidgain.c; sourceTree = "<group>"; };
+		78260DBB21F55FD600659ED5 /* decld8cp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decld8cp.c; sourceTree = "<group>"; };
+		78260DBC21F55FD600659ED5 /* mus_dtct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mus_dtct.c; sourceTree = "<group>"; };
+		78260DBD21F55FD600659ED5 /* pitchcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pitchcp.c; sourceTree = "<group>"; };
+		78260DBE21F55FD600659ED5 /* dspfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dspfunc.c; sourceTree = "<group>"; };
+		78260DBF21F55FD600659ED5 /* pwfe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwfe.c; sourceTree = "<group>"; };
+		78260DC021F55FD600659ED5 /* coderi.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = coderi.mak; sourceTree = "<group>"; };
+		78260DC121F55FD600659ED5 /* decoderi.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = decoderi.mak; sourceTree = "<group>"; };
+		78260DC221F55FD600659ED5 /* octet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = octet.h; sourceTree = "<group>"; };
+		78260DC321F55FD600659ED5 /* track_pi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = track_pi.c; sourceTree = "<group>"; };
+		78260DC421F55FD600659ED5 /* dacelpcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dacelpcp.c; sourceTree = "<group>"; };
+		78260DC521F55FD600659ED5 /* ld8cp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ld8cp.h; sourceTree = "<group>"; };
+		78260DC621F55FD600659ED5 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		78260DC721F55FD600659ED5 /* post_pro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = post_pro.c; sourceTree = "<group>"; };
+		78260DC821F55FD600659ED5 /* bwfwfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bwfwfunc.c; sourceTree = "<group>"; };
+		78260DC921F55FD600659ED5 /* acelp_cp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acelp_cp.c; sourceTree = "<group>"; };
+		78260DCA21F55FD600659ED5 /* dtx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtx.h; sourceTree = "<group>"; };
+		78260DCB21F55FD600659ED5 /* declagcp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = declagcp.c; sourceTree = "<group>"; };
+		78260DCC21F55FD600659ED5 /* qua_lspe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qua_lspe.c; sourceTree = "<group>"; };
+		78260DCD21F55FD600659ED5 /* sid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sid.h; sourceTree = "<group>"; };
+		78260DCE21F55FD600659ED5 /* calcexc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = calcexc.c; sourceTree = "<group>"; };
+		78260DCF21F55FD600659ED5 /* pred_lt3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pred_lt3.c; sourceTree = "<group>"; };
+		78260DD021F55FD600659ED5 /* tab_dtx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tab_dtx.c; sourceTree = "<group>"; };
+		78260DD121F55FD600659ED5 /* pre_proc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pre_proc.c; sourceTree = "<group>"; };
+		78260DD221F55FD600659ED5 /* vad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vad.c; sourceTree = "<group>"; };
+		78260DD321F55FD600659ED5 /* lpccp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpccp.c; sourceTree = "<group>"; };
+		78260DD421F55FD600659ED5 /* lspgetqe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lspgetqe.c; sourceTree = "<group>"; };
+		78260DD521F55FD600659ED5 /* tab_ld8k.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tab_ld8k.h; sourceTree = "<group>"; };
+		78260DD621F55FD600659ED5 /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
+		78260DD721F55FD600659ED5 /* bwfw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bwfw.c; sourceTree = "<group>"; };
+		78260DD821F55FD600659ED5 /* lpcfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpcfunc.c; sourceTree = "<group>"; };
 		783F75A621DCBA3900F573BA /* g729codec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = g729codec; sourceTree = BUILT_PRODUCTS_DIR; };
 		783F75A921DCBA3900F573BA /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
 		783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ch_f1_8k.pcm; sourceTree = "<group>"; };
-		783F775121DE0E7E00F573BA /* gainpred.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gainpred.c; sourceTree = "<group>"; };
-		783F775221DE0E7E00F573BA /* basic_op.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_op.h; sourceTree = "<group>"; };
-		783F775321DE0E7E00F573BA /* taming.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = taming.c; sourceTree = "<group>"; };
-		783F775421DE0E7E00F573BA /* oper_32b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oper_32b.h; sourceTree = "<group>"; };
-		783F775521DE0E7E00F573BA /* ld8a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ld8a.h; sourceTree = "<group>"; };
-		783F775621DE0E7E00F573BA /* cod_ld8a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cod_ld8a.c; sourceTree = "<group>"; };
-		783F775721DE0E7E00F573BA /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
-		783F775821DE0E7E00F573BA /* p_parity.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = p_parity.c; sourceTree = "<group>"; };
-		783F775921DE0E7E00F573BA /* bits.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bits.c; sourceTree = "<group>"; };
-		783F775A21DE0E7E00F573BA /* tab_ld8a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tab_ld8a.c; sourceTree = "<group>"; };
-		783F775B21DE0E7E00F573BA /* postfilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = postfilt.c; sourceTree = "<group>"; };
-		783F775C21DE0E7E00F573BA /* lspgetq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lspgetq.c; sourceTree = "<group>"; };
-		783F775D21DE0E7E00F573BA /* coder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coder.c; sourceTree = "<group>"; };
-		783F775E21DE0E7E00F573BA /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter.c; sourceTree = "<group>"; };
-		783F775F21DE0E7E00F573BA /* qua_gain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qua_gain.c; sourceTree = "<group>"; };
-		783F776021DE0E7E00F573BA /* decoder.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = decoder.mak; sourceTree = "<group>"; };
-		783F776121DE0E7E00F573BA /* lspdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lspdec.c; sourceTree = "<group>"; };
-		783F776221DE0E7E00F573BA /* oper_32b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = oper_32b.c; sourceTree = "<group>"; };
-		783F776321DE0E7E00F573BA /* dec_gain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_gain.c; sourceTree = "<group>"; };
-		783F776421DE0E7E00F573BA /* basic_op.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = basic_op.c; sourceTree = "<group>"; };
-		783F776521DE0E7E00F573BA /* acelp_ca.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = acelp_ca.c; sourceTree = "<group>"; };
-		783F776621DE0E7E00F573BA /* rename.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = rename.sh; sourceTree = "<group>"; };
-		783F776721DE0E7E00F573BA /* dspfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dspfunc.c; sourceTree = "<group>"; };
-		783F776821DE0E7E00F573BA /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		783F776921DE0E7E00F573BA /* post_pro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = post_pro.c; sourceTree = "<group>"; };
-		783F776A21DE0E7E00F573BA /* dec_ld8a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_ld8a.c; sourceTree = "<group>"; };
-		783F776B21DE0E7E00F573BA /* coder.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = coder.mak; sourceTree = "<group>"; };
-		783F776C21DE0E7E00F573BA /* de_acelp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = de_acelp.c; sourceTree = "<group>"; };
-		783F776D21DE0E7E00F573BA /* cor_func.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cor_func.c; sourceTree = "<group>"; };
-		783F776E21DE0E7E00F573BA /* decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoder.c; sourceTree = "<group>"; };
-		783F776F21DE0E7E00F573BA /* dec_lag3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dec_lag3.c; sourceTree = "<group>"; };
-		783F777021DE0E7E00F573BA /* pitch_a.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pitch_a.c; sourceTree = "<group>"; };
-		783F777121DE0E7E00F573BA /* pred_lt3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pred_lt3.c; sourceTree = "<group>"; };
-		783F777221DE0E7E00F573BA /* pre_proc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pre_proc.c; sourceTree = "<group>"; };
-		783F777321DE0E7E00F573BA /* lpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpc.c; sourceTree = "<group>"; };
-		783F777421DE0E7E00F573BA /* qua_lsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qua_lsp.c; sourceTree = "<group>"; };
-		783F777521DE0E7E00F573BA /* tab_ld8a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tab_ld8a.h; sourceTree = "<group>"; };
-		783F777621DE0E7E00F573BA /* typedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typedef.h; sourceTree = "<group>"; };
-		783F777721DE0E7E00F573BA /* lpcfunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpcfunc.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +203,74 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		78260D9C21F55FD600659ED5 /* g729I */ = {
+			isa = PBXGroup;
+			children = (
+				78260D9D21F55FD600659ED5 /* tabld8cp.c */,
+				78260D9E21F55FD600659ED5 /* gainpred.c */,
+				78260D9F21F55FD600659ED5 /* basic_op.h */,
+				78260DA121F55FD600659ED5 /* taming.c */,
+				78260DA221F55FD600659ED5 /* pwf.c */,
+				78260DA321F55FD600659ED5 /* oper_32b.h */,
+				78260DA421F55FD600659ED5 /* ld8k.h */,
+				78260DA521F55FD600659ED5 /* q_gaincp.c */,
+				78260DA621F55FD600659ED5 /* dec_sid.c */,
+				78260DA721F55FD600659ED5 /* degaincp.c */,
+				78260DA821F55FD600659ED5 /* codld8cp.c */,
+				78260DA921F55FD600659ED5 /* lspdece.c */,
+				78260DAB21F55FD600659ED5 /* p_parity.c */,
+				78260DAC21F55FD600659ED5 /* dtx.c */,
+				78260DAD21F55FD600659ED5 /* filtere.c */,
+				78260DAE21F55FD600659ED5 /* pstcp.c */,
+				78260DAF21F55FD600659ED5 /* tab_ld8k.c */,
+				78260DB021F55FD600659ED5 /* tab_dtx.h */,
+				78260DB121F55FD600659ED5 /* vad.h */,
+				78260DB321F55FD600659ED5 /* qsidlsf.c */,
+				78260DB421F55FD600659ED5 /* oper_32b.c */,
+				78260DB521F55FD600659ED5 /* bitstrea.txt */,
+				78260DB621F55FD600659ED5 /* phdisp.c */,
+				78260DB721F55FD600659ED5 /* utilcp.c */,
+				78260DB821F55FD600659ED5 /* basic_op.c */,
+				78260DB921F55FD600659ED5 /* tabld8cp.h */,
+				78260DBA21F55FD600659ED5 /* qsidgain.c */,
+				78260DBB21F55FD600659ED5 /* decld8cp.c */,
+				78260DBC21F55FD600659ED5 /* mus_dtct.c */,
+				78260DBD21F55FD600659ED5 /* pitchcp.c */,
+				78260DBE21F55FD600659ED5 /* dspfunc.c */,
+				78260DBF21F55FD600659ED5 /* pwfe.c */,
+				78260DC021F55FD600659ED5 /* coderi.mak */,
+				78260DC121F55FD600659ED5 /* decoderi.mak */,
+				78260DC221F55FD600659ED5 /* octet.h */,
+				78260DC321F55FD600659ED5 /* track_pi.c */,
+				78260DC421F55FD600659ED5 /* dacelpcp.c */,
+				78260DC621F55FD600659ED5 /* readme.txt */,
+				78260DC721F55FD600659ED5 /* post_pro.c */,
+				78260DC821F55FD600659ED5 /* bwfwfunc.c */,
+				78260DC921F55FD600659ED5 /* acelp_cp.c */,
+				78260DCA21F55FD600659ED5 /* dtx.h */,
+				78260DCB21F55FD600659ED5 /* declagcp.c */,
+				78260DCC21F55FD600659ED5 /* qua_lspe.c */,
+				78260DCD21F55FD600659ED5 /* sid.h */,
+				78260DCE21F55FD600659ED5 /* calcexc.c */,
+				78260DCF21F55FD600659ED5 /* pred_lt3.c */,
+				78260DD021F55FD600659ED5 /* tab_dtx.c */,
+				78260DD121F55FD600659ED5 /* pre_proc.c */,
+				78260DD221F55FD600659ED5 /* vad.c */,
+				78260DD321F55FD600659ED5 /* lpccp.c */,
+				78260DD421F55FD600659ED5 /* lspgetqe.c */,
+				78260DD521F55FD600659ED5 /* tab_ld8k.h */,
+				78260DD621F55FD600659ED5 /* typedef.h */,
+				78260DD721F55FD600659ED5 /* bwfw.c */,
+				78260DD821F55FD600659ED5 /* lpcfunc.c */,
+				78260DC521F55FD600659ED5 /* ld8cp.h */,
+				78260DAA21F55FD600659ED5 /* bitscp.c */,
+				78260DA021F55FD600659ED5 /* coderi.c */,
+				78260DB221F55FD600659ED5 /* decoderi.c */,
+			);
+			name = g729I;
+			path = g729codec/g729I;
+			sourceTree = SOURCE_ROOT;
+		};
 		783F759D21DCBA3900F573BA = {
 			isa = PBXGroup;
 			children = (
@@ -198,60 +295,10 @@
 				783F768521DDE8D000F573BA /* Ch_f1_8k.pcm */,
 				7805D44B21F416BE00194C98 /* utils */,
 				7805D43621F40ED800194C98 /* PESQ */,
-				783F775021DE0E7E00F573BA /* g729a */,
+				78260D9C21F55FD600659ED5 /* g729I */,
 				783F75A921DCBA3900F573BA /* main.cc */,
 			);
 			path = g729codec;
-			sourceTree = "<group>";
-		};
-		783F775021DE0E7E00F573BA /* g729a */ = {
-			isa = PBXGroup;
-			children = (
-				783F775121DE0E7E00F573BA /* gainpred.c */,
-				783F775221DE0E7E00F573BA /* basic_op.h */,
-				783F775321DE0E7E00F573BA /* taming.c */,
-				783F775421DE0E7E00F573BA /* oper_32b.h */,
-				783F775521DE0E7E00F573BA /* ld8a.h */,
-				783F775621DE0E7E00F573BA /* cod_ld8a.c */,
-				783F775721DE0E7E00F573BA /* util.c */,
-				783F775821DE0E7E00F573BA /* p_parity.c */,
-				783F775921DE0E7E00F573BA /* bits.c */,
-				783F775A21DE0E7E00F573BA /* tab_ld8a.c */,
-				783F775B21DE0E7E00F573BA /* postfilt.c */,
-				783F775C21DE0E7E00F573BA /* lspgetq.c */,
-				783F775E21DE0E7E00F573BA /* filter.c */,
-				783F775F21DE0E7E00F573BA /* qua_gain.c */,
-				783F776021DE0E7E00F573BA /* decoder.mak */,
-				783F776121DE0E7E00F573BA /* lspdec.c */,
-				783F776221DE0E7E00F573BA /* oper_32b.c */,
-				783F776321DE0E7E00F573BA /* dec_gain.c */,
-				783F776421DE0E7E00F573BA /* basic_op.c */,
-				783F776521DE0E7E00F573BA /* acelp_ca.c */,
-				783F776621DE0E7E00F573BA /* rename.sh */,
-				783F776721DE0E7E00F573BA /* dspfunc.c */,
-				783F776821DE0E7E00F573BA /* readme.txt */,
-				783F776921DE0E7E00F573BA /* post_pro.c */,
-				783F776A21DE0E7E00F573BA /* dec_ld8a.c */,
-				783F776B21DE0E7E00F573BA /* coder.mak */,
-				783F776C21DE0E7E00F573BA /* de_acelp.c */,
-				783F776D21DE0E7E00F573BA /* cor_func.c */,
-				783F776F21DE0E7E00F573BA /* dec_lag3.c */,
-				783F777021DE0E7E00F573BA /* pitch_a.c */,
-				783F777121DE0E7E00F573BA /* pred_lt3.c */,
-				783F777221DE0E7E00F573BA /* pre_proc.c */,
-				783F777321DE0E7E00F573BA /* lpc.c */,
-				783F777421DE0E7E00F573BA /* qua_lsp.c */,
-				783F777521DE0E7E00F573BA /* tab_ld8a.h */,
-				783F777621DE0E7E00F573BA /* typedef.h */,
-				783F777721DE0E7E00F573BA /* lpcfunc.c */,
-				783F775D21DE0E7E00F573BA /* coder.c */,
-				783F776E21DE0E7E00F573BA /* decoder.c */,
-				78260CC621F1B99E00659ED5 /* G729Codec.h */,
-				78260CC521F1B99E00659ED5 /* G729Codec.cpp */,
-				7805D40B21F406AF00194C98 /* g729_main_test.cc */,
-				7805D40A21F406AF00194C98 /* g729_main_test.h */,
-			);
-			path = g729a;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,46 +357,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				783F778021DE0E7E00F573BA /* lspgetq.c in Sources */,
-				783F778C21DE0E7E00F573BA /* dec_ld8a.c in Sources */,
-				783F779021DE0E7E00F573BA /* decoder.c in Sources */,
-				783F777B21DE0E7E00F573BA /* util.c in Sources */,
-				783F777921DE0E7E00F573BA /* taming.c in Sources */,
-				78260CC721F1B99E00659ED5 /* G729Codec.cpp in Sources */,
-				783F777E21DE0E7E00F573BA /* tab_ld8a.c in Sources */,
-				783F777A21DE0E7E00F573BA /* cod_ld8a.c in Sources */,
-				783F779421DE0E7E00F573BA /* pre_proc.c in Sources */,
 				7805D44421F40ED800194C98 /* pesqmain.c in Sources */,
+				78260DEE21F55FD600659ED5 /* basic_op.c in Sources */,
+				78260DE021F55FD600659ED5 /* degaincp.c in Sources */,
+				78260DE521F55FD600659ED5 /* dtx.c in Sources */,
+				78260DEC21F55FD600659ED5 /* phdisp.c in Sources */,
+				78260DF021F55FD600659ED5 /* decld8cp.c in Sources */,
+				78260DED21F55FD600659ED5 /* utilcp.c in Sources */,
+				78260E0421F55FD600659ED5 /* lspgetqe.c in Sources */,
 				7805D44E21F416BE00194C98 /* waveoperator.cc in Sources */,
-				783F778921DE0E7E00F573BA /* acelp_ca.c in Sources */,
-				783F777C21DE0E7E00F573BA /* p_parity.c in Sources */,
-				783F778121DE0E7E00F573BA /* coder.c in Sources */,
+				78260DF121F55FD600659ED5 /* mus_dtct.c in Sources */,
+				78260DF321F55FD600659ED5 /* dspfunc.c in Sources */,
+				78260DF921F55FD600659ED5 /* post_pro.c in Sources */,
+				78260DDD21F55FD600659ED5 /* pwf.c in Sources */,
+				78260DF421F55FD600659ED5 /* pwfe.c in Sources */,
+				78260DFF21F55FD600659ED5 /* pred_lt3.c in Sources */,
+				78260DE721F55FD600659ED5 /* pstcp.c in Sources */,
+				78260DDB21F55FD600659ED5 /* coderi.c in Sources */,
+				78260DF721F55FD600659ED5 /* track_pi.c in Sources */,
+				78260DE121F55FD600659ED5 /* codld8cp.c in Sources */,
+				78260E0121F55FD600659ED5 /* pre_proc.c in Sources */,
+				78260DE921F55FD600659ED5 /* decoderi.c in Sources */,
+				78260DFD21F55FD600659ED5 /* qua_lspe.c in Sources */,
+				78260DFA21F55FD600659ED5 /* bwfwfunc.c in Sources */,
+				78260DE621F55FD600659ED5 /* filtere.c in Sources */,
+				78260DE821F55FD600659ED5 /* tab_ld8k.c in Sources */,
+				78260DF221F55FD600659ED5 /* pitchcp.c in Sources */,
+				78260DEA21F55FD600659ED5 /* qsidlsf.c in Sources */,
+				78260DDC21F55FD600659ED5 /* taming.c in Sources */,
 				7805D44621F40ED800194C98 /* pesqmod.c in Sources */,
-				783F778F21DE0E7E00F573BA /* cor_func.c in Sources */,
-				783F778621DE0E7E00F573BA /* oper_32b.c in Sources */,
-				783F778221DE0E7E00F573BA /* filter.c in Sources */,
-				783F779621DE0E7E00F573BA /* qua_lsp.c in Sources */,
-				783F779221DE0E7E00F573BA /* pitch_a.c in Sources */,
-				783F777D21DE0E7E00F573BA /* bits.c in Sources */,
-				783F778721DE0E7E00F573BA /* dec_gain.c in Sources */,
-				783F778321DE0E7E00F573BA /* qua_gain.c in Sources */,
-				783F778B21DE0E7E00F573BA /* post_pro.c in Sources */,
-				783F778E21DE0E7E00F573BA /* de_acelp.c in Sources */,
+				78260E0321F55FD600659ED5 /* lpccp.c in Sources */,
+				78260DDE21F55FD600659ED5 /* q_gaincp.c in Sources */,
 				7805D44521F40ED800194C98 /* pesqio.c in Sources */,
+				78260E0621F55FD600659ED5 /* lpcfunc.c in Sources */,
 				783F75AA21DCBA3900F573BA /* main.cc in Sources */,
 				7805D44221F40ED800194C98 /* dsp.c in Sources */,
-				783F777821DE0E7E00F573BA /* gainpred.c in Sources */,
+				78260DFE21F55FD600659ED5 /* calcexc.c in Sources */,
+				78260DFB21F55FD600659ED5 /* acelp_cp.c in Sources */,
+				78260DE321F55FD600659ED5 /* bitscp.c in Sources */,
+				78260DFC21F55FD600659ED5 /* declagcp.c in Sources */,
 				7805D44A21F4121A00194C98 /* pesq_calculate.cc in Sources */,
-				783F779721DE0E7E00F573BA /* lpcfunc.c in Sources */,
-				7805D40C21F406AF00194C98 /* g729_main_test.cc in Sources */,
-				783F778821DE0E7E00F573BA /* basic_op.c in Sources */,
-				783F778A21DE0E7E00F573BA /* dspfunc.c in Sources */,
-				783F779121DE0E7E00F573BA /* dec_lag3.c in Sources */,
-				783F779521DE0E7E00F573BA /* lpc.c in Sources */,
-				783F779321DE0E7E00F573BA /* pred_lt3.c in Sources */,
-				783F778521DE0E7E00F573BA /* lspdec.c in Sources */,
-				783F777F21DE0E7E00F573BA /* postfilt.c in Sources */,
+				78260DF821F55FD600659ED5 /* dacelpcp.c in Sources */,
+				78260DEB21F55FD600659ED5 /* oper_32b.c in Sources */,
+				78260DD921F55FD600659ED5 /* tabld8cp.c in Sources */,
+				78260E0221F55FD600659ED5 /* vad.c in Sources */,
 				7805D44721F40ED800194C98 /* pesqdsp.c in Sources */,
+				78260DEF21F55FD600659ED5 /* qsidgain.c in Sources */,
+				78260E0021F55FD600659ED5 /* tab_dtx.c in Sources */,
+				78260E0521F55FD600659ED5 /* bwfw.c in Sources */,
+				78260DE221F55FD600659ED5 /* lspdece.c in Sources */,
+				78260DDA21F55FD600659ED5 /* gainpred.c in Sources */,
+				78260DE421F55FD600659ED5 /* p_parity.c in Sources */,
+				78260DDF21F55FD600659ED5 /* dec_sid.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
