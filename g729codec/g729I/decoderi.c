@@ -44,6 +44,54 @@
 
 #define POSTPROC
 
+int shouldDiscard(float rate){
+    int randomValue = rand();
+    int intRate = rate * 1000;
+    if (randomValue%1000 < intRate) {
+        return 1;
+    }
+    return 0;
+}
+
+void randomDiscardParam(Word16 *m_parm){
+    //LSP
+    if (shouldDiscard(0.0))
+    {
+        m_parm[1] = 0;
+        m_parm[2] = 0;
+    }
+    
+    // Adaptive-codebook delay
+    if (shouldDiscard(0.0))
+    {
+        m_parm[3] = 0;
+        m_parm[8] = 0;
+    }
+    
+    // gains
+    if (shouldDiscard(0.0))
+    {
+        m_parm[7] = 0; //Fitst frame
+        m_parm[11] = 0; //second frame
+    }
+    
+    // codebook
+    if (shouldDiscard(0.0))
+    {   //first subframe
+        m_parm[5] = 0; // Fixed-codebook index
+        m_parm[6] = 0; // Fixed-codebook sign
+        //second subframe
+        m_parm[9] = 0;
+        m_parm[10] = 0;
+    }
+    
+    // second frame set to zero
+    /*
+     for (int i = PRM_SIZE - 4; i < PRM_SIZE; i++) {
+     m_parm[i] = 0;
+     }*/
+}
+
 /*-----------------------------------------------------------------*
  *            Main decoder routine                                 *
  *-----------------------------------------------------------------*/
@@ -112,6 +160,8 @@ int decoder_main(int argc, const char *argv[] )
         parm[5] = Check_Parity_Pitch(parm[4], parm[5]);
         parm[0] = 0;           /* No frame erasure */
         parm[1] = 3; //bitrate
+        
+        randomDiscardParam(&parm[1]);
         
         /* ---------- */
         /*  Decoding  */
