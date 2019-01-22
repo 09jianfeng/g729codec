@@ -218,11 +218,13 @@ void Coder_ld8a(
     Autocorr(p_window, M, r_h, r_l);              /* Autocorrelations */
     Lag_window(M, r_h, r_l);                      /* Lag windowing    */
     Levinson(r_h, r_l, Ap_t, rc);                 /* Levinson Durbin  */
+      // Ap_t LPC系数转换为线谱对
     Az_lsp(Ap_t, lsp_new, lsp_old);               /* From A(z) to lsp */
 
     /* LSP quantization */
 
     Qua_lsp(lsp_new, lsp_new_q, ana);
+      //! Line spectrum pairs
     ana += 2;                         /* Advance analysis parameters pointer */
 
     /*--------------------------------------------------------------------*
@@ -230,10 +232,12 @@ void Coder_ld8a(
      * The interpolated parameters are in array Aq_t[].                   *
      *--------------------------------------------------------------------*/
 
+      // 内插系数。 Aq_t其实是Lsp逆转换回来的LPC系数。
     Int_qlpc(lsp_old_q, lsp_new_q, Aq_t);
 
     /* Compute A(z/gamma) */
 
+      //给LPC系数加权。
     Weight_Az(&Aq_t[0],   GAMMA1, M, &Ap_t[0]);
     Weight_Az(&Aq_t[MP1], GAMMA1, M, &Ap_t[MP1]);
 
@@ -248,6 +252,7 @@ void Coder_ld8a(
   * - Find the open-loop pitch delay                                     *
   *----------------------------------------------------------------------*/
 
+    //exc是残差信号
   Residu(&Aq_t[0], &speech[0], &exc[0], L_SUBFR);
   Residu(&Aq_t[MP1], &speech[L_SUBFR], &exc[L_SUBFR], L_SUBFR);
 
@@ -258,20 +263,24 @@ void Coder_ld8a(
     Ap1[0] = 4096;
     for(i=1; i<=M; i++)    /* Ap1[i] = Ap[i] - 0.7 * Ap[i-1]; */
        Ap1[i] = sub(Ap[i], mult(Ap[i-1], 22938));
+      //感知加权滤波 exc是残差信号， wsp是加权后的信号。 第一子帧
     Syn_filt(Ap1, &exc[0], &wsp[0], L_SUBFR, mem_w, 1);
 
     Ap += MP1;
     for(i=1; i<=M; i++)    /* Ap1[i] = Ap[i] - 0.7 * Ap[i-1]; */
        Ap1[i] = sub(Ap[i], mult(Ap[i-1], 22938));
+      //感知加权滤波，第二子帧
     Syn_filt(Ap1, &exc[L_SUBFR], &wsp[L_SUBFR], L_SUBFR, mem_w, 1);
   }
 
   /* Find open loop pitch lag */
 
+    //用感知加权后的信号wsp去估计T_op
   T_op = Pitch_ol_fast(wsp, PIT_MAX, L_FRAME);
 
   /* Range for closed loop pitch search in 1st subframe */
 
+    //开环估计出的T_op用来确定close-loop的搜索范围 T0_min ~ T0_max
   T0_min = sub(T_op, 3);
   if (sub(T0_min,PIT_MIN)<0) {
     T0_min = PIT_MIN;
@@ -326,14 +335,17 @@ void Coder_ld8a(
      *                 Closed-loop fractional pitch search                 *
      *---------------------------------------------------------------------*/
 
+      // xn为target vector，h1是冲激响应
     T0 = Pitch_fr3_fast(&exc[i_subfr], xn, h1, L_SUBFR, T0_min, T0_max,
                     i_subfr, &T0_frac);
-
+      //对基音延迟T0编码
     index = Enc_lag3(T0, T0_frac, &T0_min, &T0_max,PIT_MIN,PIT_MAX,i_subfr);
 
+      //! adaptive-codebook delay
     *ana++ = index;
 
     if (i_subfr == 0) {
+        //! Pitch-delay parity
       *ana++ = Parity_Pitch(index);
     }
 
@@ -373,7 +385,9 @@ void Coder_ld8a(
 
     index = ACELP_Code_A(xn2, h1, T0, sharp, code, y2, &i);
 
+      //! fixed-codebook index
     *ana++ = index;        /* Positions index */
+      //! fixed-codebook sign
     *ana++ = i;            /* Signs index     */
 
 
@@ -391,6 +405,7 @@ void Coder_ld8a(
                          /* g_coeff_cs[4]:exp_g_coeff_cs[4] = -2<xn,y2> */
                          /* g_coeff_cs[5]:exp_g_coeff_cs[5] = 2<y1,y2>  */
 
+      //! codebook gains
     *ana++ = Qua_gain(code, g_coeff_cs, exp_g_coeff_cs,
                          L_SUBFR, &gain_pit, &gain_code, taming);
 

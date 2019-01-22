@@ -116,6 +116,7 @@ int decoder_main(int argc, const char *argv[] )
     Word16  serial_size;
     Word16  bwd_dominant;
     FILE    *f_syn, *f_serial;
+    Word16 discardNum;
     
     /* Open file for synthesis and packed serial stream */
     if( (f_serial = fopen(argv[1],"rb") ) == NULL ) {
@@ -193,7 +194,13 @@ int decoder_main(int argc, const char *argv[] )
         
         
         Post_Process(pst_out, L_FRAME);
-
+        
+        if (shouldDiscard(0.0)) {
+            memset(pst_out,0,L_FRAME);
+            discardNum++;
+            printf("discard:%d \n",discardNum);
+//            continue;
+        }
         fwrite(pst_out, sizeof(Word16), L_FRAME, f_syn);
     }
     printf("\n");
