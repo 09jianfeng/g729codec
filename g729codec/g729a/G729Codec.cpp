@@ -8,7 +8,7 @@
 
 #include "G729Codec.h"
 
-bool shouldDiscard(int rate){
+static bool shouldDiscard(int rate){
     int randomValue = rand();
     if (randomValue%100 < rate) {
         return true;

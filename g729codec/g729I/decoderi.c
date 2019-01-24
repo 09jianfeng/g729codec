@@ -44,10 +44,19 @@
 
 #define POSTPROC
 
-int shouldDiscard(float rate){
-    int randomValue = rand();
+#define SKP_ADD32_ovflw(a, b)               ((int32_t)((uint32_t)(a) + (uint32_t)(b)))
+#define SKP_MLA_ovflw(a32, b32, c32)        SKP_ADD32_ovflw((a32), (uint32_t)(b32) * (uint32_t)(c32))
+#define SKP_RAND(seed)                   (SKP_MLA_ovflw(907633515, (seed), 196314165))
+
+static int shouldDiscard(float rate){
+    static uint32_t randseed = 1;
+    randseed = SKP_RAND(randseed);
+//    int randomValue = rand();
+    
     int intRate = rate * 1000;
-    if (randomValue%1000 < intRate) {
+    
+    int randValueNormal = randseed%1000;
+    if (randValueNormal < intRate) {
         return 1;
     }
     return 0;
@@ -162,7 +171,7 @@ int decoder_main(int argc, const char *argv[] )
         parm[0] = 0;           /* No frame erasure */
         parm[1] = 3; //bitrate
         
-        randomDiscardParam(&parm[1]);
+//        randomDiscardParam(&parm[1]);
         
         /* ---------- */
         /*  Decoding  */
@@ -195,7 +204,7 @@ int decoder_main(int argc, const char *argv[] )
         
         Post_Process(pst_out, L_FRAME);
         
-        if (shouldDiscard(0.0)) {
+        if (shouldDiscard(0.2)) {
             memset(pst_out,0,L_FRAME);
             discardNum++;
             printf("discard:%d \n",discardNum);
